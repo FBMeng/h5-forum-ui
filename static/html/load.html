@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>load</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/load.css">
+	<!-- QQ登录SDK -->
+	<!-- data-appid和data-redirecturi（回调地址）需要修改 -->
+	<!-- <script type="text/javascript"  charset="utf-8"
+		src="http://connect.qq.com/qc_jssdk.js"
+		data-appid="101352538"
+		data-redirecturi="http://www.baidu.com">
+	</script> -->
+</head>
+<body>
+	<div id="div">
+		<div><p id="homepage">返回主页</p><br></div>
+		<div id="center">
+			<br>
+			<div class="item"><p>账号登录</p><br></div>
+			<div class="item"><input type="text" name="" id="in1" placeholder="请输入邮箱、账号、手机号"></div>
+			<br>
+			<div class="item"><input type="password" name="" id="in2" placeholder="请输入登录密码"></div>
+			<br>
+			<div class="item"><input type="text" name="code" id="code" placeholder="验证码"><img src="?" id="imageCode"></div>
+			<br><br>
+			<div class="item"><input type="button" name="" id="button" value="登陆"></div>
+			<br>
+			<!-- 自定义QQ登录 -->
+			<div class="item" id="qqLoginBtn" onclick="toLogin()"><img src="../img/qq_load_2.png"></div>
+			<script type="text/javascript">
+			function toLogin()
+			{
+				var appid = '101352538';
+				var redirecturi = 'http://www.baidu.com';
+				//以下为按钮点击事件的逻辑。注意这里要重新打开窗口
+				//否则后面跳转到QQ登录，授权页面时会直接缩小当前浏览器的窗口，而不是打开新窗口
+				var url = 'https://graph.qq.com/oauth2.0/authorize?client_id=' + appid + '&response_type=token&redirect_uri=' + encodeURIComponent(redirecturi);
+				var A=window.open(url,"TencentLogin",
+				"width=450,height=320,menubar=0,scrollbars=1,resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+			}
+			</script>
+
+			<!-- QQ登录 -->
+			<!-- <script type="text/javascript">
+				QC.Login({
+				btnId:"qqLoginBtn"	//插入按钮的节点id
+			}); -->
+			</script>
+			<br><br><br>
+		</div>
+		<div><p id="regist">前往注册</p></div>
+	</div>
+	
+
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/load.js"></script>
+	<script language="javascript">
+		// 获取验证码
+		// var adres=code_url + getRandomStr();
+		// document.getElementById('imageCode').src = adres;
+	</script>
+	
+</body>
+</html>

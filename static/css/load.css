@@ -1,0 +1,40 @@
+html{
+	background:url(../img/gril.jpg) no-repeat 0px 0px;
+	background-size:cover;
+}
+#div{
+	/* text-align: center; */
+	margin:0 auto;
+	/* margin-top: 5%; */
+	width: 400px;
+	height: 50px;
+}
+#center{
+	background-color: aliceblue;
+}
+#homepage{
+	text-align: left;
+}
+#regist{
+	text-align: right;
+}
+.item{
+	margin:0 auto;
+	/* text-align: center; */
+	width: 200px;
+}
+.item input{
+	height: 25px;
+	width: 180px;
+}
+/* .item p{
+	text-align: center;
+} */
+#code{
+	width: 80px;
+	float: left;
+}
+#imageCode{
+	width: 80px;
+	float: left;
+}

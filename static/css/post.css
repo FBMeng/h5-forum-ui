@@ -1,0 +1,22 @@
+#div{
+	margin: auto;
+	height: 500px;
+	width: 500px;
+	/*margin-top: 5%;*/
+}
+
+#title{
+	height: 20px;
+	width: 300px;
+	border: solid thin black;
+}
+
+#text{
+	height: 300px;
+	width: 300px;
+	border: solid thin black;
+}
+
+.sign{
+	text-align: right;
+}

@@ -1,0 +1,23 @@
+#top {
+	width: 100%;
+	height: 80px;
+	border: solid thin black;
+}
+#left {
+	/*height: 500px;*/
+	width: 20%;
+	border: solid thin black;
+	float: left;
+}
+#right {
+	/*height: 500px;*/
+	width: 79.7%;
+	border: solid thin black;
+	float: left;
+}
+.p{
+	text-align:right;
+}
+#title{
+	text-align:center;
+}
